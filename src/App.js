@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { Tombol } from './Tombol';
 
 function App() {
+  const name = ['Edward','Maulana','Sitompul'];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tombol nama = {name[0]}/>
+      <Tombol nama = {name[1]}/>
+      <Tombol nama = {name[2]}/>
     </div>
   );
 }
